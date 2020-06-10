@@ -47,8 +47,8 @@ chmod a+x pdfscraper.py && ./pdfscrape.py
 ![GIF](https://github.com/L0rdC0mm4nd3r/pdfscrape/blob/master/gif.gif)
 
 ## Author
-
-* **Lord Commander** [Github](https://github.com/L0rdC0mm4nd3r/) and [Telegram](https:t.me/L0rdComm4nd3r)
+//
+* **Lord Commander** [Github](https://github.com/L0rdC0mm4nd3r/) and [Telegram](https://t.me/L0rdComm4nd3r)
 
 
 ## License
