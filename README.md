@@ -1,6 +1,6 @@
 <a href="https://github.com/L0rdC0mm4nd3r/pdfscrape"><img src="https://github.com/L0rdC0mm4nd3r/pdfscrape/blob/master/banner.png" title="pdfscrape" alt="pdfscrape"></a>
 
-# PDFSCRAPER
+# PDFSCRAPE
 
 > PDFSCRAPER is a script written in Python which will allows you to automatically download 
 > pdfs from http://ndl.ethernet.et.edu
@@ -42,7 +42,7 @@ python3 pdfscrape.py
 OR
 
 ```
-chmod a+x pdfscraper.py && ./pdfscrape.py
+chmod a+x pdfscrape.py && ./pdfscrape.py
 ```
 ![GIF](https://github.com/L0rdC0mm4nd3r/pdfscrape/blob/master/gif.gif)
 
