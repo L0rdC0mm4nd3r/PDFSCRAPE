@@ -2,7 +2,7 @@
 
 # PDFSCRAPE
 
-> PDFSCRAPER is a script written in Python which will allows you to automatically download 
+> PDFSCRAPE is a script written in Python which will allows you to automatically download 
 > pdfs from http://ndl.ethernet.et.edu
 
 ## Features
