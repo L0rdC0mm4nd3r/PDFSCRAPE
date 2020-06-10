@@ -245,7 +245,7 @@ def main(dep_link):
 
 				download_tracker+=1
 				if download_tracker == len(download_link):
-					os.remove('download_tracker')
+					os.remove('download.log')
 	except OSError:
 		exit('\033[1m\033[91m[!]No internet connection!\033[m')
 	except KeyboardInterrupt:
