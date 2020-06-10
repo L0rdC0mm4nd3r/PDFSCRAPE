@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+#you read codes huh? awesome <3
+# -*- coding:utf-8 -*- 
+# name   : PDFSCRAPE
+# git    : http://github.com/L0rdC0mm4nd3r
+# author : Lord Commander
+
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 from tqdm import *
