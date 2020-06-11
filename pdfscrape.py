@@ -273,7 +273,7 @@ def choice():
 		time.sleep(2)
 
 		current_dir = os.getcwd()
-		check_dir = os.path.exists(current_dir+choice)
+		check_dir = os.path.exists(current_dir+'/'+choice)
 		if check_dir != True:
 			os.mkdir(choice)
 		else:pass
