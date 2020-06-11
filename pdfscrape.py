@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 #you read codes huh? awesome <3
-# -*- coding:utf-8 -*- 
 # name   : PDFSCRAPE
-# git    : http://github.com/L0rdC0mm4nd3r
 # author : Lord Commander
+# git    : http://github.com/L0rdC0mm4nd3r
+# telegram : https://t.me/L0rdComm4nd3r
 
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
@@ -127,6 +127,8 @@ faculty_choice = """
 |~~~~~~~~~~14) LAND ADMINISTRATION\033[m
 """			
 
+message = '\033[92m\033[1m[~]Thank you for using me!\033[91m(❤ω❤)\033[m'
+
 def link_crawler(link):
     try:
         website = 'http://196.189.45.87:80'
@@ -228,6 +230,7 @@ def main(dep_link):
 					print('\033[1m\033[91m[!]%s already Exists!\033[m'% filename)
 					pass
 				else:
+
 					urllib.request.urlretrieve(i,filename,reporthook)
 					print('\n\033[1m\033[92m[*]%s Downloaded!' % filename)
 					check_download = open('download.log','a')
@@ -254,15 +257,31 @@ def main(dep_link):
 
 def choice():
 	try:
+
+		current_dir = os.getcwd()
+		check_dir = os.path.exists(current_dir+'/books')
+
+		if check_dir != True:
+			os.mkdir('books')
+		else:pass
+
+		os.chdir(current_dir+'/books')
 		print(faculty_choice)
 		select_dept = int(input('[~]Select faculty: '))
 		choice = dep_main[select_dept-1]
 		print('\033[1m\033[94m[*]You selected %s\n\033[m' % choice)
 		time.sleep(2)
+
+		current_dir = os.getcwd()
+		check_dir = os.path.exists(current_dir+choice)
+		if check_dir != True:
+			os.mkdir(choice)
+		else:pass
+		os.chdir(current_dir+'/'+choice)
 		print('\n'.join(faculty[choice]))
 		select_div = int(input('\n[~]Select your department: '))
 		div_choice = faculty[choice][select_div-1]
-		choice = div_choice.split('- ',1)[1]    
+		choice = div_choice.split('- ',1)[1]
 		main(choice)
 
 	except IndexError:
@@ -279,3 +298,4 @@ next_link = []
 
 if __name__ == '__main__':
 	choice()
+	print(message)
